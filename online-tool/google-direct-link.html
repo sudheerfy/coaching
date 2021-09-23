@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Google Drive Direct Link Generator</title>
+  </head>
+  <body>
+    <!-- Header Part Starting -->
+    <script src="../assets/js/header.js"></script>
+    <!-- Header Part Ending -->
+
+    <!-- main-page content starting -->
+    <div class="container mt-4 mb-5">
+      <div class="row g-2">
+        <div class="col-md-8">
+          <div class="p-3 bgc-white">
+            <div id="gdrivetool">
+              <script type = "text/JavaScript">function setup(){document.getElementById("button").addEventListener("click",go),document.getElementById("output").addEventListener("click",copy),document.getElementById("reset_btn").addEventListener("click",reset)}function setStatus(e,t=!1){var n=document.getElementById("help-text");n.innerText=e,n.style.color=t?"darkred":"#227300"}function go(){var e=document.getElementById("input").value,t=/\/d\/(.+?)(?:\/|#|\?|$)/.exec(e),n=document.getElementById("output");if(!t)return n.value="",setStatus("Error: Invalid URL",!0),n.disabled=!0,void(document.getElementById("help-text").style.display="block");var o="https://drive.google.com/uc?export=download&id="+t[1];n.disabled=!1,n.value=o,setStatus("Success! Click the output link to copy it to your clipboard"),document.getElementById("help-text").style.display="block"}function copy(){this.disabled||(this.select(),document.execCommand("copy")?setStatus("Link copied to clipboard!"):setStatus("Couldn't copy link to clipboard. Please copy it manually.",!0))}function reset(){document.getElementById("input").value="",document.getElementById("output").value="",document.getElementById("help-text").style.display="none"}window.onload=setup;</script>
+            
+              <!-- <script language="javascript">
+                window.onload = setup;
+        
+                function setup(){
+                    document.getElementById("button").addEventListener("click", go);
+                    document.getElementById("output").addEventListener("click", copy);
+                    document.getElementById("reset_btn").addEventListener("click", reset);
+                }
+                
+                function setStatus(status, error = false) {
+                    var helpText = document.getElementById("help-text");
+                    
+                    helpText.innerText = status;
+                    
+                    if (error) {
+                        helpText.style.color = "darkred";
+                    } else {
+                        helpText.style.color = "#227300";
+                    }
+                }
+                  
+                function go(){
+                    var linkId = document.getElementById("input").value;
+                    var idExtractor = /\/d\/(.+?)(?:\/|#|\?|$)/;
+                    var result = idExtractor.exec(linkId);
+                    
+                    var outputBox = document.getElementById("output");
+                    
+                    
+                    if (!result) {
+                        outputBox.value = "";
+                        setStatus("Error: Invalid URL", true);
+                        outputBox.disabled = true;
+                        document.getElementById("help-text").style.display = "block";
+                        return;
+                    }
+                    
+                    var finalLink = "https://drive.google.com/uc?export=download&id=" + result[1];
+                    outputBox.disabled = false;
+                    outputBox.value = finalLink;
+                    setStatus("Success! Click the output link to copy it to your clipboard");
+                    document.getElementById("help-text").style.display = "block";
+                }
+                
+                function copy(){
+                    if (this.disabled) {
+                        return;
+                    }
+                    
+                    this.select();
+                    var copied = document.execCommand("copy");
+                    
+                    if (copied) {
+                        setStatus("Link copied to clipboard!");
+                    } else {
+                        setStatus("Couldn't copy link to clipboard. Please copy it manually.", true);
+                    }
+                }
+
+                function reset(){
+                  document.getElementById("input").value = '';
+                  document.getElementById("output").value = '';
+                  document.getElementById("help-text").style.display = "none";
+                }
+            </script> -->
+              <h2>Google Drive Direct Link Generator</h2>
+              <div class="hstack gap-3 mt-3">
+                <input class="form-control me-auto" id="input" type="text" required placeholder="Enter File Sharing Link here..." aria-label="Enter File Sharing Link here...">
+                <button type="button" class="btn btn-secondary" id="button">Submit</button>
+                <div class="vr"></div>
+                <button type="button" class="btn btn-outline-danger" id="reset_btn">Reset</button>
+              </div>
+              <div id="linkHelp" class="form-text"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
+              </svg></span> Scroll down for instructions</div>
+              <h6 class="mt-5">Output Link :</h6>
+              <input class="form-control me-auto" id="output" type="text" readonly disabled type="text" placeholder="View the direct link to your file here..." aria-label="View the direct link to your file here...">
+              <div id="help-text"></div>
+            </div>
+            <div class="card my-4">
+              <h4 class="p-2 mb-2 bg-secondary text-white">NOTE :</h4>
+              <div class="card-body">
+                
+                <p>This tool will only work for files that you <mark>UPLOAD</mark> to Google Drive and uses the following permissions to share: "<mark>Public on the web</mark>" or "<mark>Anyone with the link</mark>".</p>
+                <p>This tool will not work for Google Documents (Documents, Spreadsheets, Presentations, etc.) that created inside Google Drive. If you want to create a direct link for Google Documents (Documents, Spreadsheets, Presentations, etc.) that created inside Google Drive, first download them to your computer then upload that file back on to Google Drive.</p>
+              </div>
+            </div>
+            <div class="p-2 bg-secondary text-white text-center rounded"><h4>How to Get Your File Sharing Link</h4></div>
+            <div class="callout">
+              <strong>Step 1:</strong> Go to <strong><a href="https://drive.google.com/">Google Drive</a></strong> and right click the file that you want to share, then click on "<em>Get link</em>"
+            </div>
+            <div class="text-center">
+              <div class="border shadow p-3 mb-5 bg-body rounded">
+                <img src="img/glink-step-1.webp" class="rounded img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="callout">
+              <strong>Step 2:</strong> In the window that comes up, change the visibility to "<em>Anyone with the link</em>"
+            </div>
+            <div class="text-center">
+              <div class="border shadow p-3 mb-5 bg-body rounded">
+                <img src="img/glink-step-2.webp" class="rounded img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="callout">
+              <strong>Step 3:</strong> Click "<em>Copy link</em>"
+            </div>
+            <div class="text-center">
+              <div class="border shadow p-3 mb-5 bg-body rounded">
+                <img src="img/glink-step-3.webp" class="rounded img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="callout">
+              <strong>Step 4:</strong> Paste that link into the text box above and click "<em>Submit</em>" to create your link. Enjoy!
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-3 bgc-white">
+
+            Custom column padding
+          
+          </div>
+          <div class="p-3 bgc-white my-3">
+            
+            Custom column padding
+          
+          </div>
+          <div class="p-3 bgc-white my-3">
+            
+            Custom column padding
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main-page content ending -->
+
+    <!-- Footer Part Starting -->
+    <script src="../assets/js/footer.js"></script>
+    <!-- Footer Part Ending -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
