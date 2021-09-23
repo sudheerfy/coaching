@@ -8,7 +8,7 @@ document.write('      </div>');
 document.write('    </header>');
 document.write('    <nav class="menu p-2 border-bottom border-2">');
 document.write('');
-document.write('    <div class="scroll-x-navbar">');
+document.write('    <div class="">');
 document.write('    ');
 document.write('        ');
 document.write('        <!-- Example single danger button -->');
