@@ -32,7 +32,6 @@ body{
 }
 .i-scroll{
     white-space: nowrap;
-    overflow-x: auto;
 }
 .i-btn{
     background-color: #869CA3;
