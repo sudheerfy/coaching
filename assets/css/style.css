@@ -29,7 +29,19 @@ body{
 .menu{
     background-color: #fff;
     color: #000;
-    
+}
+.i-scroll{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.i-btn{
+    background-color: #869CA3;
+    color: #f4f4f4;
+}
+
+.i-btn:hover{
+    color: #fff;
+    background-color: #5C636A;
 }
 /* .btn{
     padding: 3px;
