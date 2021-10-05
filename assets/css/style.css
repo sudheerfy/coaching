@@ -32,7 +32,8 @@ body{
     position: relative;
     z-index: 9;
 }
-.wrapper {
+.wrapper{
+    width: 1170px;
     margin: 0 auto;
 }
 .menu a {
