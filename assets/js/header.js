@@ -5,7 +5,7 @@ document.write('        <a href="/" target="default"><img class="identity" src="
 document.write('      </div>');
 document.write('    </div>');
 document.write('  </header>');
-document.write('  <div class="menu hidden">');
+document.write('  <div class="menu">');
 document.write('    <div class="wrapper">');
 document.write('      <a href="/" title="Home Page"><i class="bi bi-house-door-fill"></i> HOME</a>');
 document.write('      <a href="#" title="Textbook Solutions"><i class="bi bi-door-open-fill"></i> TEXTBOOK SOLUTIONS</a>');
