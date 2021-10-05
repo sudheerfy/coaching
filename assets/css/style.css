@@ -1,9 +1,5 @@
 body{
     background-color: #f4f4f4;
-    box-sizing: border-box;
-    -webkit-overflow-x: hidden;
-    -moz-overflow-x: hidden;
-    overflow-x: hidden;
 }
 .callout {
     padding: 1.25rem;
@@ -37,13 +33,13 @@ body{
     z-index: 9;
 }
 .wrapper{
-    width: 1170px;
     margin: 0 auto;
+    text-align: center;
 }
 .menu a {
     color: #666;
     display: inline-block;
-    padding: 0 12px;
+    padding: 0 10px;
     text-decoration: none;
     font-weight: 600;
     height: 3.5rem;
@@ -51,9 +47,6 @@ body{
 }
 .menu a:hover{
     color: #002B5A;
-}
-.menu a:first-child {
-    margin-left: -1rem;
 }
 
 /* footer style part start */
@@ -86,18 +79,3 @@ body{
 }
 
 /* footer style part End */
-
-@media (min-width: 1145px)  {
-    .wrapper{
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1170px) {
-    .menu {
-        width: 100%;
-        padding-left: 18px;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-}
