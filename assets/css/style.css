@@ -33,7 +33,7 @@ body{
     z-index: 9;
 }
 .wrapper {
-    width: 1144px;
+    max-width: 1144px;
     margin: 0 auto;
 }
 .menu a {
