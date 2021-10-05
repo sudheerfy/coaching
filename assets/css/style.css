@@ -1,5 +1,7 @@
 body{
     background-color: #f4f4f4;
+    -webkit-overflow-x: hidden;
+    -moz-overflow-x: hidden;
     overflow-x: hidden;
 }
 .callout {
