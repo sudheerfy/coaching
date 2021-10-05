@@ -14,7 +14,7 @@ body{
     border-left-color: #f0ad4e;
 }
 /* .container{
-    width: 1144px;
+    max-width: 1144px;
 } */
 .bgc-white{
     background-color: #fff;
@@ -31,11 +31,11 @@ body{
     background-color: #fff;
     box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
 }
-.wrapper{
+/* .wrapper{
     text-align: center;
     overflow: auto;
     white-space: nowrap;
-}
+} */
 .menu a {
     color: #666;
     display: inline-block;
@@ -79,9 +79,3 @@ body{
 }
 
 /* footer style part End */
-
-@media (min-width: 992px) { 
-    .container{
-    width: 1144px;
-}
- }
