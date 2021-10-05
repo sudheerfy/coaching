@@ -1,6 +1,6 @@
 body{
     background-color: #f4f4f4;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .callout {
     padding: 1.25rem;
