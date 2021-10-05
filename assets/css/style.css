@@ -1,5 +1,6 @@
 body{
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 .callout {
     padding: 1.25rem;
@@ -79,8 +80,8 @@ body{
 
 /* footer style part End */
 
-/* @media (min-width: 992px) { 
+@media (min-width: 992px) { 
     .container{
     width: 1144px;
 }
- } */
+ }
