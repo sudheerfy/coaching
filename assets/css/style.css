@@ -28,37 +28,31 @@ body{
 }
 .menu{
     background-color: #fff;
-    color: #000;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+    position: relative;
+    z-index: 9;
 }
-.i-scroll{
-    white-space: nowrap;
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
 }
-.i-btn{
-    background-color: #869CA3;
-    color: #f4f4f4;
+.menu a {
+    color: #666;
+    display: inline-block;
+    padding: 0 12px;
+    text-decoration: none;
+    font-weight: 600;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.menu a:hover{
+    color: #002B5A;
+}
+.menu a:first-child {
+    margin-left: -1rem;
 }
 
-.i-btn:hover{
-    color: #fff;
-    background-color: #5C636A;
-}
-/* .btn{
-    padding: 3px;
-} */
-/* .btn-secondary{
-    background-color: transparent;
-    border-color: transparent;
-    text-transform: uppercase;
-    font-weight: 500;
-} */
-.btn-group{
-    padding: 0 3px;
-}
-.btn:focus:not(:focus-visible) {
-    outline: 0 !important;
-    box-shadow: none !important;
-  }
-
+/* footer style part start */
 .footer {
     background-color: #002B5A;
 }
@@ -87,9 +81,20 @@ body{
     color: #fff;
 }
 
-@media (min-width: 1170px)  {
-    .scroll-x-navbar{
-        width: 1500px;
+/* footer style part End */
+
+@media (min-width: 1145px)  {
+    .wrapper{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1144px) {
+    .menu {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
