@@ -1,5 +1,6 @@
 body{
     background-color: #f4f4f4;
+    overflow: hidden;
 }
 .callout {
     padding: 1.25rem;
@@ -89,11 +90,10 @@ body{
     }
 }
 
-@media screen and (max-width: 1144px) {
+@media screen and (max-width: 1170px) {
     .menu {
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 18px;
         overflow-x: auto;
         white-space: nowrap;
     }
