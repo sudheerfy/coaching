@@ -1,0 +1,78 @@
+body{
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+.callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+.callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bgc-white{
+    background-color: #fff;
+}
+.header{
+    height: 80px;
+    background-color: #002B5A;
+}
+.identity{
+    width: 250px;
+    height: auto;
+}
+.menu{
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+}
+.wrapper{
+    text-align: center;
+    overflow: auto;
+    white-space: nowrap;
+}
+.menu a {
+    color: #666;
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.menu a:hover{
+    color: #002B5A;
+}
+
+/* footer style part start */
+.footer {
+    background-color: #002B5A;
+}
+.footer h6 {
+    color: #FDCE4B;
+    text-transform: uppercase;
+}
+.footer ul {
+    padding: 0;
+    margin: 0;
+}
+.footer ul>li{
+    list-style: none;
+}
+.footer ul>li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.footer ul>li a:hover{
+    font-size: 12.2px;
+}
+.footer p{
+    color: #fff;
+}
+
+/* footer style part End */
