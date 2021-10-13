@@ -5,7 +5,16 @@ body {
   padding-top: 50px;
   background-color: #fff;
 }
-
+@media (max-width: 499.98px) { 
+  html,
+  body {
+    padding-top: 75px;
+  }
+  .bd-search {
+    width: 100%;
+    padding-top: 7px;
+  }
+}
 /* Header Part Style Layout */
 .nav-scroller {
   position: relative;
