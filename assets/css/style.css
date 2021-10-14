@@ -3,16 +3,16 @@ body {
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */
   padding-top: 50px;
-  background-color: #fff;
+  background-color: #fff
 }
 @media (max-width: 499.98px) { 
   html,
   body {
-    padding-top: 75px;
+    padding-top: 75px
   }
   .bd-search {
     width: 100%;
-    padding-top: 7px;
+    padding-top: 7px
   }
 }
 /* Header Part Style Layout */
@@ -21,7 +21,7 @@ body {
   z-index: 2;
   height: 2rem;
   overflow-y: hidden;
-  background-color: #fff;
+  background-color: #fff
 }
 .nav-scroller .nav {
   display: flex;
@@ -32,77 +32,77 @@ body {
   color: #393939;
   text-align: center;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch
 }
 .nav-underline .nav-link {
   padding: .5rem .5rem;
   font-size: 12px;
-  color: #393939;
+  color: #393939
 }
 .nav-underline .nav-link:hover {
   font-weight: 500;
-  color: #000;
+  color: #000
 }
 .nav-underline .active {
   font-weight: 500;
-  color: #000;
+  color: #000
 }
 .bg-purple {
-  background-color: #6f42c1;
+  background-color: #6f42c1
 }
 .bg-sudheer {
-  background-color: #F2F4F5;
+  background-color: #F2F4F5
 }
 .mobile-toggle {
-  display: none;
+  display: none
 }
 .navbar-brand {
-  font-size: 1.50rem;
+  font-size: 1.50rem
 }
 .desktop-menu {
-  margin-bottom: -3px;
+  margin-bottom: -3px
 }
 @media (max-width: 1199.98px) {
   .mobile-toggle {
     display: inline-block;
     border: none;
     background-color: transparent;
-    margin-bottom: -5px;
+    margin-bottom: -5px
   }
   .desktop-menu {
-    display: none;
+    display: none
   }
 }
 
 /* Mobile Navigation Panel Style */
 .offcanvas {
-  width: 300px;
+  width: 300px
 }
 
 /* destination menu-bar */
 .bd-sidebar-toggle {
-  color: #6c757d;
+  color: #6c757d
 }
 .bd-sidebar-toggle:hover,
 .bd-sidebar-toggle:focus {
-  color: #7952b3;
+  color: #7952b3
 }
 .bd-sidebar-toggle:focus {
-  box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
+  box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25)
 }
 .bd-sidebar-toggle .bi-collapse {
-  display: none;
+  display: none
 }
 .bd-sidebar-toggle:not(.collapsed) .bi-expand {
-  display: none;
+  display: none
 }
 .bd-sidebar-toggle:not(.collapsed) .bi-collapse {
-  display: inline-block;
+  display: inline-block
 }
 .bi {
   vertical-align: -.125em;
   pointer-events: none;
-  fill: currentColor;
+  fill: currentColor
 }
 
 /* Main-page left content style */
@@ -113,39 +113,39 @@ body {
   font-weight: 600;
   color: rgba(0, 0, 0, .65);
   background-color: transparent;
-  border: 0;
+  border: 0
 }
 .btn-toggle:hover,
 .btn-toggle:focus {
   color: rgba(0, 0, 0, .85);
-  background-color: #d2f4ea;
+  background-color: #d2f4ea
 }
 .btn-toggle::before {
   width: 1.25em;
   line-height: 0;
   content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
   transition: transform .35s ease;
-  transform-origin: .5em 50%;
+  transform-origin: .5em 50%
 }
 .btn-toggle[aria-expanded="true"] {
   color: rgba(0, 0, 0, .85);
 }
 .btn-toggle[aria-expanded="true"]::before {
-  transform: rotate(90deg);
+  transform: rotate(90deg)
 }
 .btn-toggle-nav a {
   display: inline-flex;
   padding: .1875rem .5rem;
   margin-top: .125rem;
   margin-left: 1.25rem;
-  text-decoration: none;
+  text-decoration: none
 }
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
-  background-color: #d2f4ea;
+  background-color: #d2f4ea
 }
 .fw-semibold {
-  font-weight: 600;
+  font-weight: 600
 }
 @media (min-width: 768px) {
   .bd-links {
@@ -155,15 +155,15 @@ body {
     height: calc(100vh - 7rem);
     padding-left: .25rem;
     margin-left: -.25rem;
-    overflow-y: auto;
+    overflow-y: auto
   }
   #bd-docs-nav {
-    display: block;
+    display: block
   }
 }
 @media (max-width: 767.98px) {
   #bd-docs-nav .collapse:not(.show) {
-    display: none;
+    display: none
   }
 }
 
@@ -175,7 +175,7 @@ body {
   cursor: pointer;
   font-weight: 400;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 10px
 }
 .footer-container {
   display: flex;
@@ -212,6 +212,13 @@ body {
   color: #393939;
   font-size: 16px;
   padding-bottom: 16px
+}
+.footer-container .upper-section .left-container .quick-actions-list-container .quick-actions-list .quick-heading {
+  position: relative;
+  color: #393939;
+  font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 0
 }
 .footer-container .upper-section .left-container .quick-actions-list-container .quick-actions-heading:after,
 .footer-container .upper-section .left-container .quick-actions-list-container .quick-actions-heading:before {
@@ -280,9 +287,9 @@ body {
   filter: none
 }
 .footer-container a:hover {
-  color: #e40000 !important
+  color: #212529 !important
 }
-@media (max-width:767px) {
+@media (max-width: 912.98px) {
   .footer-container .upper-section {
     padding-top: 60px;
     flex-direction: column;
@@ -318,7 +325,7 @@ body {
   }
   .footer-container .upper-section .left-container .quick-actions-list-container .quick-actions-list li a {
     font-size: 16px;
-    color: rgb(112, 112, 112);
+    color: rgb(112, 112, 112)
   }
   .footer-container .upper-section .right-container .scroll-to-top {
     position: absolute;
@@ -328,42 +335,42 @@ body {
     font-size: 18px
   }
   .footer-container .upper-section .right-container .scroll-to-top svg {
-    margin-bottom: -5px;
+    margin-bottom: -5px
   }
   .footer-container .upper-section .right-container .social {
     margin: 52px 0 10px
   }
 }
 /* Universal footer style */
-.universal-footer-copyrite {
+.universal-footer {
   padding-bottom: 10px;
   background-color: transparent;
   color: rgb(112, 112, 112);
   padding-top: 20px;
-  font-size: 13.5px;
+  font-size: 13.5px
 }
-.universal-footer-copyrite ul li a{
-  font-weight: 500;
+.universal-footer ul li a{
+  font-weight: 500
 }
-.universal-footer-dpts {
-  float: left;
+.universal-footer-content {
+  float: left
 }
-.universal-footer-dpts li a {
-  font-weight: 400;
+.universal-footer-content li a {
+  font-weight: 400
 }
 .universal-footer-copy {
   float: right;
-  font-weight: 500;
+  font-weight: 500
 }
 @media (max-width:767px) {
-  .universal-footer-copyrite {
-    text-align: center;
+  .universal-footer {
+    text-align: center
   }
-  .universal-footer-dpts {
-    float: none;
+  .universal-footer-content {
+    float: none
   }
   .universal-footer-copy {
     float: none;
-    padding-top: 10px;
+    padding-top: 10px
   }
 }
