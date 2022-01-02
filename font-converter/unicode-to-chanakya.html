@@ -19,12 +19,37 @@
         color: #5c5c5c;
       }
       /* // Medium devices (tablets, less than 992px) */
-      @media (max-width: 991.98px) {
+      @media (max-width: 1199.98px) {
         .form-control{
           height: 200px;
         }
       }
-      
+      /* // X-Small devices (portrait phones, less than 576px) */
+      @media (max-width: 767.98px) { 
+        .entry-header h2{
+          font-size: 18px;
+        }
+        .ptop{
+          padding-top: 10px!important;
+        }
+        .pttop{
+          padding-top: 18px!important;
+        }
+        .card-header {
+          padding: 0.1rem 0.6rem;
+        }
+        .small-btn {
+          padding: 0.25rem 0.5rem;
+          font-size: .875rem;
+          border-radius: 0.2rem;
+        }
+        .card-footer{
+          padding: 0.3rem 0.6rem;
+        }
+        .form-control{
+          height: 230px;
+        }
+      }   
     </style>
     <title>Unicode Tool</title>
   </head>
@@ -35,7 +60,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="pt-3 col-lg-6">
+          <div class="pt-3 ptop col-xl-6">
             
             <div class="card text-center">
               <div class="card-header">
@@ -51,13 +76,13 @@
                 <textarea class="form-control" id="unicode_text" name="ConvertedText" rows="18" style="border: none;"></textarea>
               </div>
               <div class="card-footer text-muted">
-                <button type="button" id="" class="btn btn-primary" onclick="Convert_Unicode_to_Chanakya();">Convert to Chanakya</button>
+                <button type="button" id="" class="btn btn-primary small-btn" onclick="Convert_Unicode_to_Chanakya();">Convert to Chanakya</button>
               </div>
             </div>
 
           </div>
           
-          <div class="pt-3 col-lg-6">
+          <div class="pt-3 pttop col-xl-6">
 
             <div class="card text-center">
               <div class="card-header">
@@ -73,7 +98,7 @@
                 <textarea class="form-control" id="legacy_text" name="TextToConvert" rows="18" style="border: none;"></textarea>
               </div>
               <div class="card-footer text-muted">
-                <button type="button" id="" class="btn btn-primary" onclick="convert_to_unicode1();">Convert to Unicode </button>
+                <button type="button" id="" class="btn btn-primary small-btn" onclick="convert_to_unicode1();">Convert to Unicode </button>
               </div>
             </div>
 
