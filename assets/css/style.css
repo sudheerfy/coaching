@@ -2,13 +2,13 @@ html,
 body {
   overflow-x: hidden;
   /* Prevent scroll on narrow devices */
-  padding-top: 50px;
+  padding-top: 45px;
   background-color: #fff
 }
 @media (max-width: 499.98px) { 
   html,
   body {
-    padding-top: 75px
+    padding-top: 70px
   }
   .bd-search {
     width: 100%;
