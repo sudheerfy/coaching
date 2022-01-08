@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Sudheer Classes - The Kids Learning</title>
@@ -28,10 +29,12 @@
       }
       .bi{
         font-size: 22px;
-        color: #5c5c5c;
       }
-      .bi:hover{
-        color: #222;
+      .float-end span a{
+        color: #777;
+      }
+      .float-end span a:hover{
+        color: #111 !important;
       }
     </style>
   </head>
@@ -234,14 +237,14 @@
                 <div class="card-header">
                   <h5 class="float-start">English to Hindi</h5>             
                   <div class="float-end">
-                    <span id="TransliterationHelp">
-                      <i class="bi bi-info-circle"></i>
+                    <span id="clearText">
+                      <a href="" title="Restore"><i class="bi bi-arrow-counterclockwise"></i></a>
                     </span>
                     <span id="SaveTextAsFile" class="px-3">
-                      <i class="bi bi-download"></i>
+                      <a href="" title="Save to Text File"><i class="bi bi-download"></i></a>
                     </span>
                     <span id="CopyTool">
-                      <i class="bi bi-clipboard"></i>
+                      <a href="" title="Select and Copy"><i class="bi bi-clipboard"></i></a>
                     </span>
                   </div>
                 </div>
@@ -250,24 +253,65 @@
                     <!-- <div id="input_tool_helper">
                       <em>Additional options appears here!</em>
                     </div> -->
-                    <textarea class="myTextbox" id="input_tool" dir="ltr" placeholder="Start Typing"></textarea> 
+                    <textarea class="myTextbox copiable storable downloadable" id="input_tool" dir="ltr" placeholder="Start Typing...."></textarea> 
                     
                     <!-- REQUIRED! -->
                     <input type="hidden" name="googleInputKeyCode" value="hi-t-i0-und">
                   <span class="spinner spinner-line" id="spinner-loading" hidden>
                     <span class="large">कृपया प्रतीक्षा करें, हिंदी संपादक लोड हो रहा है।...</span><br>
                     <span class="small">Please wait, Hindi Language Editor is Loading...</span>
-                </span>
+                  </span>
                 </div>
                 <div class="card-footer text-muted">
                   <div class="row">
-                    <div class="col-lg-4">Total
-                        Words : <span id="totalWords" class="document-data">0</span> </div>
-                    <div class="col-lg-4">Total
-                        Character : <span id="totalCharacter" class="document-data">0</span> </div>
-                    <div class="col-lg-4">Total
-                        Character (Without Space) : <span id="totalCharacterNoSpace" class="document-data">0</span> </div>
-                </div>
+                    <div class="col-xl-3"><h6>Total
+                        Words : <span id="totalWords">0</span></h6>  </div>
+                    <div class="col-xl-4"><h6> Total
+                        Characters : <span id="totalCharacter">0</span></h6> </div>
+                    <div class="col-xl-5"><h6>Total
+                        Characters (Without Space) : <span id="totalCharacterNoSpace">0</span></h6>  </div>
+                  </div>
+                  <script>
+                    function input_reset() {
+                      document.getElementById("input_tool").value = '';
+                    }
+                  </script>
+                  <script type="text/javascript">
+                    counter = function() {
+                        var value = $('#input_tool').val();
+                        if (value.length == 0) {
+                            $('#totalWords').html(0);
+                            $('#totalCharacter').html(0);
+                            $('#charCount').html(0);
+                            $('#totalCharacterNoSpace').html(0);
+                            return;
+                        }
+                        var regex = /\s+/gi;
+                        var totalWords = value.trim().replace(regex, ' ').split(' ').length;
+                        var totalCharacter = value.length;
+                        var charCount = value.trim().length;
+                        var totalCharacterNoSpace = value.replace(regex, '').length;
+                    
+                        $('#totalWords').html(totalWords);
+                        $('#totalCharacter').html(totalCharacter);
+                        $('#charCount').html(charCount);
+                        $('#totalCharacterNoSpace').html(totalCharacterNoSpace);
+                      };
+                      $(document).ready(function() {
+                          // $('#counter').click(counter);
+                          $('#input_tool').change(counter);
+                          $('#input_tool').keydown(counter);
+                          $('#input_tool').keypress(counter);
+                          $('#input_tool').keyup(counter);
+                          $('#input_tool').blur(counter);
+                          $('#input_tool').focus(counter);
+                      });
+                    </script>
+                    <script>
+                      $("#clearText").click( function(){
+                        localStorage.clear();
+                      });
+                    </script>
                 </div>
               </div>
               <script type="text/javascript" src="https://indiatyping.com/simple-converter/1.js"></script>
