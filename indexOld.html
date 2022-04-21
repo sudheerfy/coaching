@@ -151,79 +151,106 @@
     </div>
 
     <!-- main-page content starting -->
+    <div class="container-xxl"> <!-- current page destination -->
+      <nav class="d-flex justify-content-between py-2 px-1" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Home</a></li>
+          <li class="breadcrumb-item"><a class="text-decoration-none" href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+        <button class="d-flex btn bd-sidebar-toggle d-md-none pb-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+            <title>Expand</title>
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"/>
+          </svg>
     
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
+            <title>Collapse</title>
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
     
-    <div class="container-xxl textbook">
-      <h1 class="title">editor choice</h1>
-      <div class="book-list">
-        <button class="pre-btn"><img src="images/pre.png" alt=""></button>
-        <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
-        <div class="book-container">
+    <div class="container-xxl">
+      <div class="row mb-3">
+        <!-- Main-Page Left Content-->
+        <div class="col-xl-2 col-lg-3 col-md-3 themed-grid-col collapse" id="bd-docs-nav" aria-label="Docs navigation">
 
-          <div class="book-card">
-              <img src="images/poster 1.png" class="book-img" alt="">
-              <div class="book-body">
-                <h2 class="book-name">Kalrav</h2>
-                <h6 class="book-subject">Hindi</h6>
-              </div>
-          </div>
-          <div class="book-card">
-            <img src="images/poster 2.png" class="book-img" alt="">
-            <div class="book-body">
-              <h2 class="book-name">Kalrav</h2>
-              <h6 class="book-subject">Hindi</h6>
-            </div>
-          </div>
-          <div class="book-card">
-            <img src="images/poster 3.png" class="book-img" alt="">
-            <div class="book-body">
-              <h2 class="book-name">Kalrav</h2>
-              <h6 class="book-subject">Hindi</h6>
-            </div>
-          </div>
-          <div class="book-card">
-            <img src="images/poster 4.png" class="book-img" alt="">
-            <div class="book-body">
-              <h2 class="book-name">Kalrav</h2>
-              <h6 class="book-subject">Hindi</h6>
-            </div>
-          </div>
-          <div class="book-card">
-            <img src="images/poster 5.png" class="book-img" alt="">
-            <div class="book-body">
-              <h2 class="book-name">Kalrav</h2>
-              <h6 class="book-subject">Hindi</h6>
-            </div>
-          </div>
-          <div class="book-card">
-            <img src="images/poster 6.png" class="book-img" alt="">
-            <div class="book-body">
-              <h2 class="book-name">Kalrav</h2>
-              <h6 class="book-subject">Hindi</h6>
-            </div>
-          </div>
-          <div class="book-card">
-            <img src="images/poster 7.png" class="book-img" alt="">
-            <div class="book-body">
-              <h2 class="book-name">Kalrav</h2>
-              <h6 class="book-subject">Hindi</h6>
-            </div>
-          </div>
-          <div class="book-card">
-            <img src="images/poster 8.png" class="book-img" alt="">
-            <div class="book-body">
-              <h2 class="book-name">Kalrav</h2>
-              <h6 class="book-subject">Hindi</h6>
-            </div>
-          </div>
-          <div class="book-card">
-            <img src="images/poster 9.png" class="book-img" alt="">
-            <div class="book-body">
-              <h2 class="book-name">Kalrav</h2>
-              <h6 class="book-subject">Hindi</h6>
-            </div>
+          <div class="flex-shrink-0 py-1 bd-links">
+            <a href="/" class="d-flex align-items-center pb-1 mb-3 link-dark text-decoration-none border-bottom">
+              <!-- <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg> -->
+              <span class="fs-5 fw-semibold">SCERT Class 1</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  Home
+                </button>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">Overview</a></li>
+                    <li><a href="#" class="link-dark rounded">Updates</a></li>
+                    <li><a href="#" class="link-dark rounded">Reports</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                  Dashboard
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">Overview</a></li>
+                    <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                    <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                    <li><a href="#" class="link-dark rounded">Annually</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                  Orders
+                </button>
+                <div class="collapse" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded">New</a></li>
+                    <li><a href="#" class="link-dark rounded">Processed</a></li>
+                    <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                    <li><a href="#" class="link-dark rounded">Returned</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
 
+        </div>
+        <div class="col-xl-10 col-lg-9 col-md-9 themed-grid-col">
+          <div class="row">
+            <!-- Main-Page Center Content-->
+            <div class="col-lg-9 col-md-12 themed-grid-col">
+
+              <h3>What is Physics</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, reprehenderit. Impedit quibusdam perferendis quidem atque, beatae labore deleniti assumenda. Soluta, at et. Hic voluptates sint deleniti dolore facere neque assumenda?</p>
+              <h3>What are cars</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nostrum alias deserunt a, dolor possimus in ipsam libero est quasi. Nemo quidem rerum enim assumenda iste deleniti aperiam odio rem?</p>
+              <h3>What is Physics</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, reprehenderit. Impedit quibusdam perferendis quidem atque, beatae labore deleniti assumenda. Soluta, at et. Hic voluptates sint deleniti dolore facere neque assumenda?</p>
+              <h3>What are cars</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nostrum alias deserunt a, dolor possimus in ipsam libero est quasi. Nemo quidem rerum enim assumenda iste deleniti aperiam odio rem?</p>
+              <h3>What is Physics</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, reprehenderit. Impedit quibusdam perferendis quidem atque, beatae labore deleniti assumenda. Soluta, at et. Hic voluptates sint deleniti dolore facere neque assumenda?</p>
+              <h3>What are cars</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nostrum alias deserunt a, dolor possimus in ipsam libero est quasi. Nemo quidem rerum enim assumenda iste deleniti aperiam odio rem?</p>
+              <h3>What is Physics</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, reprehenderit. Impedit quibusdam perferendis quidem atque, beatae labore deleniti assumenda. Soluta, at et. Hic voluptates sint deleniti dolore facere neque assumenda?</p>
+              <h3>What are cars</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nostrum alias deserunt a, dolor possimus in ipsam libero est quasi. Nemo quidem rerum enim assumenda iste deleniti aperiam odio rem?</p>
+
+            </div>
+            <!-- Main-Page Right Content-->
+            <div class="col-lg-3 col-md-12 themed-grid-col">.col-md-3</div>
+          </div>
         </div>
       </div>
     </div>
@@ -399,25 +426,6 @@
               this.classList.toggle("active");
           });
       }
-
-      // book card sliders
-
-      let bookContainers = [...document.querySelectorAll('.book-container')];
-      let preBtns = [...document.querySelectorAll('.pre-btn')];
-      let nxtBtns = [...document.querySelectorAll('.nxt-btn')];
-
-      bookContainers.forEach((item, i) => {
-        let containerDimensions = item.getBoundingClientRect();
-        let containerWidth = containerDimensions.width;
-
-        nxtBtns[i].addEventListener('click', () => {
-          item.scrollLeft += containerWidth - 200;
-        })
-
-        preBtns[i].addEventListener('click', () => {
-          item.scrollLeft -= containerWidth + 200;
-        })
-      })
 
     </script>
   </body>

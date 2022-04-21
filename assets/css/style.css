@@ -368,3 +368,123 @@ body {
     padding-top: 10px
   }
 }
+
+/* Book Cover Display - clone Hotstar */
+.textbook .title{
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.book-list{
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.book-container{
+  position: absolute;
+  width: 92%;
+  padding-left: 10px;
+  height: 220px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+.book-container::-webkit-scrollbar{
+  display: none;
+}
+
+.book-card{
+  position: relative;
+  min-width: 150px;
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.book-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-card:hover{
+  transform: scale(1.1);
+}
+
+.book-card:hover .book-body{
+  opacity: 1;
+}
+
+.book-body{
+  opacity: 0;
+  color: #f4f4f4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.book-name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 100%;
+}
+
+.book-subject{
+  color: #fff;
+  opacity: 0.8;
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.pre-btn,
+.nxt-btn{
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.pre-btn{
+  left: 0;
+  background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+
+.nxt-btn{
+  right: 0;
+  background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+
+.pre-btn img,
+.nxt-btn img{
+  width: 15px;
+  height: 20px;
+  opacity: 0;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img{
+  opacity: 1;
+}
