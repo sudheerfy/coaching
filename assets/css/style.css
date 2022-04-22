@@ -370,11 +370,6 @@ body {
 }
 
 /* Book Cover Display - clone Hotstar */
-.textbook .title{
-  text-transform: capitalize;
-  font-size: 22px;
-  font-weight: 500;
-}
 
 .book-list{
   width: 100%;
@@ -402,9 +397,9 @@ body {
 
 .book-card{
   position: relative;
-  min-width: 150px;
-  width: 150px;
-  height: 200px;
+  min-width: 147px;
+  width: 147px;
+  height: 195px;
   border-radius: 5px;
   overflow: hidden;
   margin-right: 10px;
@@ -417,9 +412,34 @@ body {
   object-fit: cover;
 }
 
-.book-card:hover{
-  transform: scale(1.1);
+@media (min-width: 1400px) {
+  .book-card:hover{
+    transform: scale(1.1);
+  }
 }
+@media (max-width: 1399.98px) {
+  .book-container{
+    padding-left: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .book-card:hover .book-body{
+    opacity: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .book-card{
+    position: relative;
+    min-width: 126px;
+    width: 126px;
+    height: 167px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 7px;
+    transition: 0.5s;
+  }
+}
+
 
 .book-card:hover .book-body{
   opacity: 1;
