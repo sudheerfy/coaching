@@ -16,9 +16,6 @@ document.write('              <li class="nav-item"><a href="#" class="nav-link l
 document.write('              <li class="nav-item"><a href="online-tool/google-direct-link.html" class="nav-link link-dark px-2">Online Tools</a></li>');
 document.write('            </ul>');
 document.write('          </div>');
-document.write('          <form class="d-flex bd-search position-relative">');
-document.write('            <input type="search" class="form-control" id="search-input" placeholder="Type your search..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.1">');
-document.write('          </form>');
 document.write('');
 document.write('        </div> ');
 document.write('      </nav>');
