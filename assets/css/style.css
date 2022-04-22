@@ -385,7 +385,7 @@ body {
 
 .book-container{
   position: absolute;
-  width: 92%;
+  width: 99%;
   padding-left: 10px;
   height: 220px;
   display: flex;
@@ -458,33 +458,36 @@ body {
 .pre-btn,
 .nxt-btn{
   position: absolute;
-  top: 0;
-  width: 5%;
-  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  padding: 6px;
   z-index: 2;
-  border: none;
+  border: 1px solid #ccc!important;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
   cursor: pointer;
   outline: none;
 }
 
 .pre-btn{
-  left: 0;
-  background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+  left: -50px;
+  background-color: #fff;
 }
 
 .nxt-btn{
-  right: 0;
-  background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+  right: -50px;
+  background-color: #fff;
 }
 
-.pre-btn img,
-.nxt-btn img{
-  width: 15px;
-  height: 20px;
-  opacity: 0;
+.pre-btn:hover,
+.nxt-btn:hover{
+  background-color: #f4f4f4;
 }
 
-.pre-btn:hover img,
-.nxt-btn:hover img{
-  opacity: 1;
+.pre-btn:focus,
+.nxt-btn:focus{
+  border: 1px solid #ccc!important;
+  background-color: rgba(117, 190, 218, 0.1);  /* 50% transparent */
 }
