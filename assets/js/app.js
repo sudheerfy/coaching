@@ -1,23 +1,23 @@
-//Get the button
-let backT = document.querySelector(".scroll-to-top");
+// //Get the button
+// let backT = document.querySelector(".scroll-to-top");
       
-// When the user clicks on the button, scroll to the top of the document
-backT.addEventListener("click", backToTop);
+// // When the user clicks on the button, scroll to the top of the document
+// backT.addEventListener("click", backToTop);
 
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function backToTop() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
 
-// When the user clicks on the footer link, expand and collapse quick action list of the document
-let quickAction = document.getElementsByClassName("quick-actions-list-container");
-let i;
+// // When the user clicks on the footer link, expand and collapse quick action list of the document
+// let quickAction = document.getElementsByClassName("quick-actions-list-container");
+// let i;
 
-for (i = 0; i < quickAction.length; i++) {
-  quickAction[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-    });
-}
+// for (i = 0; i < quickAction.length; i++) {
+//   quickAction[i].addEventListener("click", function () {
+//         this.classList.toggle("active");
+//     });
+// }
 
 // book card sliders
 
