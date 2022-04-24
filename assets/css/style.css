@@ -380,12 +380,12 @@ body {
 }
 
 .sdr-footer .container-xxl .sdr-footer-left ul {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
 }
 
 .sdr-footer .container-xxl .sdr-footer-left p {
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
 }
 .sdr-footer .container-xxl .sdr-footer-left ul {
@@ -399,7 +399,7 @@ body {
 }
 
 .sdr-footer .container-xxl .sdr-footer-left ul li a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: capitalize;
   color: var(--TEXT_COLOR_L1);
@@ -416,7 +416,7 @@ body {
 .sdr-footer .container-xxl .sdr-footer-left .copyright {
   padding-top: 11px;
   padding-right: 15%;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.8;
   color: var(--TEXT_COLOR_L3);
   font-weight: 400;
@@ -430,7 +430,7 @@ body {
 }
 
 .sdr-footer .container-xxl .sdr-footer-right p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--TEXT_COLOR_L2);
   padding-bottom: 7px;
